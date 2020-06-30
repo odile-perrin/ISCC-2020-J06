@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 
 <?php
+
 function afficher_titre($nom)
 {
     echo "<h1>Fiche produit : $nom</h1>";
@@ -16,10 +17,12 @@ function afficher_description($couleur, $prix)
 
 function afficher_produit($nom, $couleur, $prix, $disponible)
 {
-    if ($disponible==true)
-    afficher_titre ($nom) and afficher_description ($couleur, $prix);
+    if ($disponible==true) {
+    afficher_titre ($nom);
+    afficher_description ($couleur, $prix);
+    }
 
-    else
+    elseif ($disponible==false)
     echo "<p>Le produit $nom n'est malheureusement plus disponible </p>";
     return;
 } 
