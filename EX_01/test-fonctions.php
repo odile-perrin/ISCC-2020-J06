@@ -29,13 +29,43 @@ function afficher_produit($nom, $couleur, $prix, $disponible)
 ?>
 
 <?php
+    function update_dispo($quantité)
+    {
+        echo "<h1>Fiche produit : $nom</h1>";
+        return(true/false);
+    } 
+
+    function restockage($quantité, $nbajout)
+    {
+        echo "<p>$nbajout produits ont été ajoutés au stock.</p>";
+        return($quantité+$nbajout);
+    } 
+
+    function achat($quantité,$nbachat)
+    {
+        echo "<p>$nbachat produits ont été ajoutés acheté.</p>";
+        return(true/false);
+    } 
+
+    
+
+
+?>
+
+<?php
 $nom="T-shirt femme";
 $couleur="rouge";
 $prix=15.50;
 $disponible=true;
 $disponible=false;
 $quantité=10;
+$nbajout=;
+$nbachat=;
 ?>
 
+<?php
+function
+
+?>
 
 
